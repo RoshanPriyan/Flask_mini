@@ -12,7 +12,8 @@ PASSWORD = os.getenv("PASSWORD")
 HOST = os.getenv("HOST")
 PORT = os.getenv("PORT")
 
-baseurl = f"{DATABASE_URL}://{USER_NAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE_NAME}"
+# baseurl = f"{DATABASE_URL}://{USER_NAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE_NAME}"
+baseurl = f"{DATABASE_URL}://{USER_NAME}:{PASSWORD}@{HOST}/{DATABASE_NAME}"
 
 try:
     engine = create_engine(baseurl, echo=False)
