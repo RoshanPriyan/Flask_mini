@@ -6,8 +6,6 @@ from api.movies.routers import router as movie_router
 
 load_dotenv()
 
-host = os.getenv("FLASKHOST")
-port = os.getenv("FLASKPORT")
 debug = os.getenv("DEBUG")
 
 app = Flask(__name__)
@@ -17,4 +15,4 @@ app.register_blueprint(movie_router)
 
 
 if __name__=="__main__":
-    app.run(host=host, port=port, debug=debug)
+    app.run(debug=debug)
