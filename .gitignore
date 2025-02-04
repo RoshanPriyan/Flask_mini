@@ -1,0 +1,32 @@
+# Virtual environment
+sqlenv/
+venv/
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs & temporary files
+*.log
+*.sqlite3
+*.db
+*.pid
+*.swp
+*.swo
+*.swn
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency lock files
+Pipfile
+Pipfile.lock
