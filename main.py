@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_cors import CORS
 import os
 from dotenv import load_dotenv
 from api.users.routers import router as user_router
@@ -16,8 +15,6 @@ app = Flask(__name__)
 app.register_blueprint(user_router)
 app.register_blueprint(movie_router)
 
-
-CORS(app) 
 
 if __name__=="__main__":
     app.run(host=host, port=port, debug=debug)
